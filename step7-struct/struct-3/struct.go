@@ -10,13 +10,13 @@ type myStruct struct {
 }
 
 //BT - Method associate with the above struct with pointer
-func (m *myStruct) printMePointer() string {
-	return m.name
+func (m *myStruct) printMePointer(aNewName string) {
+	m.name = aNewName
 }
 
-//BT - Method associate with the above struct with copy
-func (m myStruct) printMeCopy() string {
-	return m.name
+//BT - Method associate with the above struct with copy by value
+func (m myStruct) printMeCopy(aNewName string) {
+	m.name = aNewName
 }
 
 func main() {
@@ -27,7 +27,17 @@ func main() {
 
 	fmt.Println(s.name, s.age)
 
-	fmt.Println(s.printMePointer())
+	s.printMePointer("hary")
 
-	fmt.Println(s.printMeCopy())
+	//Important
+	//BT - After printMePointer - With the pointer receiver, the change will reflect to the caller.
+
+	fmt.Println(s.name)
+
+	s.printMeCopy("micheal")
+
+	//Important
+	//BT - After printMeCopy - With value receiver, the change only effect the local but not to the caller.
+
+	fmt.Println(s.name)
 }
