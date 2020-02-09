@@ -13,6 +13,8 @@ func main() {
 	//*******************************************************
 
 	//BT - Create 3 elements in an array with initialized value. No var keyword.
+
+	//BT - Format: type{your_init_value_her}
 	myArray := [3]int{1, 2, 3}
 
 	//BT - Create an array with var keyword. All elements are automatically initilized to 0.
@@ -39,6 +41,7 @@ func main() {
 	//     bracket.
 	//********************************************************
 
+	//BT - Format: type{your_init_value_her}
 	mySlices := []int{1, 2, 3}
 
 	var mySlices2 = []int{1, 2, 3}
@@ -62,6 +65,7 @@ func main() {
 	//Map:
 	//********************************************************
 
+	//BT - Format: type{your_init_value_her}
 	myMap := map[string]int{"CA": 55112, "MN": 55434}
 
 	fmt.Println(myMap["CA"])

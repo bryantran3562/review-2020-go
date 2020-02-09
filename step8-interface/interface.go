@@ -4,6 +4,11 @@ import (
 	"fmt"
 )
 
+//BT - Interface defines a behavior of an object. It only specifies what methods an object should have and
+//     it is up to the object to implement the details the methods.
+// In go, interface is a set of methods signature, a type in which provided all the implemetion of those methods
+// in the interface is said to be implement that interface.
+
 type animal interface {
 	speak() string
 }
