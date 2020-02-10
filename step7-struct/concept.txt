@@ -1,0 +1,29 @@
+1. How to declare a struct.
+
+2. How to initialize it.
+
+   - With field name.
+
+   - Without field name.
+
+3. How to declare an anonymous struct and how to initialize it.
+
+4. How initialize a slice of the struct.
+
+5. Initialize a struct with a var keyword and initialize the struct with data
+
+   var e = Employee{firstname: "trong", lastname: "tran"}
+
+   var e1 Employee
+
+   e1 = Employee{firstname: "trong", lastname: "tran"}
+
+   e := Employee{firstname: "trong", lastname: "tran"}
+
+5. Embedded struct
+
+6. Attached a method to a struct.
+
+   - Value receiver - Change will not reflex to the caller. It only changes the local copy.
+
+   - Pointer receiver - Change will reflex to the caller.
