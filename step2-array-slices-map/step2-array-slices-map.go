@@ -57,6 +57,9 @@ func main() {
 	fmt.Println(mySlices3[0])
 	fmt.Println(mySlices4[0])
 
+	//BT - The range() function will return both index and the value. This is
+	//why: i,s := range mySlices
+	//i,s := range - It means both variables: i,s get := from range function.
 	for i, s := range mySlices {
 		fmt.Printf("Index: %d equal %d\r\n", i, s)
 	}

@@ -22,7 +22,7 @@ func sendRequest() {
 	data := map[string]string{"username": "admin", "password": "admin"}
 	jsonData, _ := json.Marshal(data)
 	fmt.Println(string(jsonData))
-	req, err := http.NewRequest("POST", "https://192.168.2.1/api/login", bytes.NewBuffer(jsonData))
+	req, err := http.NewRequest("POST", "https://172.16.0.56/api/login", bytes.NewBuffer(jsonData))
 	req.Header.Set("Content-type", "application/json")
 	if err != nil {
 		fmt.Println(err)
