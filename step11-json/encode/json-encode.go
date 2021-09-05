@@ -14,9 +14,11 @@ func main() {
 
 	data := myData{Name: "trong", Age: 24}
 
+	//BT - Take a Go struct and encoded into the json format. This will be a decimal bytes.
+	//     For example, fmt.Println(dataString)
 	dataString, _ := json.Marshal(data)
 
-	fmt.Println(string(dataString))
+	fmt.Printf("%s\n", dataString)
 
 	//BT - Passing in two slices
 
@@ -24,19 +26,19 @@ func main() {
 
 	fmt.Println(string(dataString2))
 
-	//BT - map
+	// //BT - map
 
-	test := map[string]interface{}{
+	// test := map[string]interface{}{
 
-		"birdSounds": map[string]string{
-			"pigeon": "coo",
-			"eagle":  "squak",
-		},
-		"total birds": 2,
-	}
+	// 	"birdSounds": map[string]string{
+	// 		"pigeon": "coo",
+	// 		"eagle":  "squak",
+	// 	},
+	// 	"total birds": 2,
+	// }
 
-	dataString3, _ := json.Marshal(test)
+	// dataString3, _ := json.Marshal(test)
 
-	fmt.Println(string(dataString3))
+	// fmt.Println(string(dataString3))
 
 }
